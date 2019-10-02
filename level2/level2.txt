@@ -3,19 +3,62 @@ JavaScript MA03
 Level 2
 
 1. In your own words, describe what JavaScript Code Style is.
+Writng programs is very complex, therefor its important that we as
+coders write meaningful, easy to understand, neat and tidy code.
+
+This is not only beacause you alone write the code, but also so you can
+spend less time growling and grunting over your own code-solving difficulties.
+But also so other programmers can repair, or redo your code easily.
+The same goes for the opposite, its easier for you as a programmer
+to understand other codes if theyre written in a somewhat basic
+manner. Allthough in most- or all cases, coders will have their own style of writing 
+their own code.
 
 2. What is a Regular Expression?
+Regular expression also known as 'reggex' is a way to validate strings. This is often used to validate
+email address, zip codes, phone numbers etc. It van also be used to find patterns in the string.
+
 
 3. What does the .random() method do?
+random produces/returns a pseudo random number between 0 and 1
 
 4. What does the .sort() method do?
+It sorts the content in the array in its correct place... almost.
+Numbers are slightly different as javascript takes the first number 0-9 and arranges it
+in order. If there is 2 different values [24, 22], sort 
+will place 22 first as the second number has the lowest value and then
+24 as the 4 is higher than 2.
+
+Javascript assumes the elements are strings.
 
 5. What does the .reverse() method do?
+It reverses the order of elements in the array and returns a new reversed array.
 
 6. List two examples of bad JavaScript code.
 
+a = 4;
+
+b = 4;
+
+if(a === b)
+
+console.log('I am true');
+
+or
+
+if('4' == 4) return true;
+
+
 7. What data types can a JSON object contain?
+
+Objects, Arrays, Strings, Numbers, Booleans and Null.
 
 8. What is minifying JavaScript Code?
 
+This means creating less code that still works.
+An example could be to write the same code but with shorter variables, and also removing un-used code.
+
 9. What is a global variable?
+global variable is when a variable is decleared outside any object or function. 
+Aka the global scope. or when a value is set directly to the global object window.
+Also declearing a value to a variable inside a scope without declearing var/let/const sets the variable globally.
