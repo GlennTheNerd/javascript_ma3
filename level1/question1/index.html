@@ -9,22 +9,27 @@
 
 <!--Contact Form-->
 <!--name, last name, telephone number, email address and submit button.-->
-<form name="form" onsubmit="return validateNames()">
+<form name="form">
     <div class="formWrap">
         <div class="formSection">
-            First Name: <input id="firstName" name="formName" type="text" placeholder="example: Jon">
+            First Name: <input id="firstName" name="formName" type="text" placeholder="example: Jon" required>
+            <p id="firstNameAns"></p>
         </div>
         <div class="formSection">
-            Last Name: <input id="lastName" name="formName" type ="text" placeholder="example: Doe">
+            Last Name: <input id="lastName" name="lastName" type ="text" placeholder="example: Doe" required>
+            <p id="lastNameAns"></p>
         </div>
         <div class="formSection">
-            Phone Number: <input id="phoneNumber" type ="number" placeholder="example: 0047xxxxxxxx" required>
+            Phone Number: +47<input name="phoneNumber" type ="number" placeholder="example: 22224444" required>
+            <p id="phnCheck"></p>
         </div>
         <div class="formSection">
-            E-mail Address: <input id="emailAddress" type ="email" placeholder="example: jon.doe@example.com" required>
+            E-mail Address: <input name="emailAddress" type ="email" placeholder="jon.doe@example.com" required>
+            <p id="mailAns"></p>
         </div>
         <div class="formSection">
-            <input type="submit" value="Submit" id="submitButton">
+            <input type="button" value="Submit" id="submitButton" onclick='return validateForm()'>
+            <p id="btnAns"></p>
         </div>
     </div>
 </form>
